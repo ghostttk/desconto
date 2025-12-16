@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgate de Cupom - 5OFF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            z-index: -1;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .coupon-code {
+            font-size: 2rem;
+            font-weight: bold;
+            background: rgba(0,0,0,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 30px 0;
+            letter-spacing: 2px;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .steps {
+            background: rgba(255,255,255,0.15);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+        }
+        
+        .step-item {
+            display: flex;
+            align-items: center;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .step-item:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateX(10px);
+        }
+        
+        .step-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .step-text {
+            flex-grow: 1;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: rgba(255,255,255,0.2);
+            border: none;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 10px;
+        }
+        
+        .btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-btn:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-3px);
+        }
+        
+        .social-btn i {
+            margin-right: 8px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+                margin: 10px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .coupon-code {
+                font-size: 1.5rem;
+            }
+            
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-gift"></i> Resgate de Cupom Especial!</h1>
+        
+        <div class="coupon-code">5OFF</div>
+        
+        <div class="steps">
+            <h2><i class="fas fa-tasks"></i> Passos para Resgatar:</h2>
+            
+            <div class="step-item">
+                <div class="step-icon"><i class="fab fa-discord"></i></div>
+                <div class="step-text">
+                    <strong>1. Junte-se ao nosso Discord</strong><br>
+                    <small>Clique no botão abaixo para acessar nosso servidor</small>
+                </div>
+                <a href="https://discord.gg/qCc77tbAHC" target="_blank" class="btn">
+                    <i class="fab fa-discord"></i> Entrar no Discord
+                </a>
+            </div>
+            
+            <div class="step-item">
+                <div class="step-icon"><i class="fab fa-instagram"></i></div>
+                <div class="step-text">
+                    <strong>2. Siga nosso Instagram</strong><br>
+                    <small>Acompanhe nossas novidades e promoções</small>
+                </div>
+                <a href="https://www.instagram.com/joao.zc4/" target="_blank" class="btn">
+                    <i class="fab fa-instagram"></i> Seguir
+                </a>
+            </div>
+            
+            <div class="step-item">
+                <div class="step-icon"><i class="fab fa-twitter"></i></div>
+                <div class="step-text">
+                    <strong>3. Siga nosso Twitter</strong><br>
+                    <small>Fique por dentro das últimas atualizações</small>
+                </div>
+                <a href="https://x.com/joao_zc4" target="_blank" class="btn">
+                    <i class="fab fa-twitter"></i> Seguir
+                </a>
+            </div>
+        </div>
+        
+        <div class="social-links">
+            <a href="https://discord.gg/qCc77tbAHC" target="_blank" class="social-btn">
+                <i class="fab fa-discord"></i> Discord
+            </a>
+            <a href="https://www.instagram.com/joao.zc4/" target="_blank" class="social-btn">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://x.com/joao_zc4" target="_blank" class="social-btn">
+                <i class="fab fa-twitter"></i> Twitter
+            </a>
+        </div>
+        
+        <!-- Google AdSense -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2814570608190366"
+     crossorigin="anonymous"></script>
+        <script>
+             (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <script>
+        // Função para registrar ações dos usuários
+        function registerAction(action) {
+            // Aqui você pode enviar dados para seu backend
+            console.log(`Ação registrada: ${action}`);
+        }
+        
+        // Adiciona eventos aos botões
+        document.querySelectorAll('.btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const action = this.textContent.trim();
+                registerAction(action);
+            });
+        });
+    </script>
+</body>
+</html>
