@@ -150,6 +150,19 @@
             margin-right: 8px;
         }
         
+        /* Gradient para fundo */
+        body::after {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            opacity: 0.3;
+            z-index: -1;
+        }
+        
         /* Responsive */
         @media (max-width: 768px) {
             .container {
@@ -228,7 +241,7 @@
         </div>
         
         <!-- Google AdSense -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2814570608190366"
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2814570608190366"
      crossorigin="anonymous"></script>
         <script>
              (adsbygoogle = window.adsbygoogle || []).push({});
